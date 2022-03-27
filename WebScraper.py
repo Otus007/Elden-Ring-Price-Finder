@@ -19,7 +19,7 @@ SteamRequest = requests.get(SteamUrl).text
 CdKeysResults = re.search('"price":\d\d\d', CdKeysRequest).group(0)
 SteamResults = re.search('final="\d\d\d', SteamRequest).group(0)
 
-print('Elden Ring is','R' + CdKeysResults.split(':')[1], 'On CdKeys')
-print('Elden Ring is','R' + SteamResults.split('=')[1].strip('"'), 'On Steam')
+print('Elden Ring is'," " + CdKeysResults.split(':')[1], 'On CdKeys')
+print('Elden Ring is'," " + SteamResults.split('=')[1].strip('"'), 'On Steam')
 
 x =  input("----")
