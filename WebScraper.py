@@ -22,4 +22,4 @@ SteamResults = re.search('final="\d\d\d', SteamRequest).group(0)
 print('Elden Ring is','R' + CdKeysResults.split(':')[1], 'On CdKeys')
 print('Elden Ring is','R' + SteamResults.split('=')[1].strip('"'), 'On Steam')
 
-ey =  input("----")
+x =  input("----")
